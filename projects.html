@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title>
+    </head>
+    <body>
+        <!--Creating a nav bar using Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-xxl justify-content-center">
+              <a class="navbar-brand" href="#">Guilherme Juventino</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="languages.html">Languages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="projects.html">My Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Where to Find Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <h1 class="text-center" id="title"></h1>
+        <h2 class="text-center">Here are some programming projects I've worked on:</h2>
+
+        <!--Creating a set of cards holding image and links of my projects using Bootstrap-->
+        <div class="card-group gap-5">
+          <div class="card text-bg-dark">
+            <img src="img/genericSpaceShooter.png" class="card-img-top" alt="Generic Space Shooter Gameplay Image">
+            <div class="card-body">
+              <h5 class="card-title">Generic Space Shooter</h5>
+              <p class="card-text">
+                A Space Shooter game in Pygame where you must dodge and shoot asteroids and
+                the creatures that dwell inside them.
+              </p>
+              <a href="https://github.com/GuilhermeJuventino/Generic-Space-Shooter-V3"
+              class="btn btn-primary">Github Repository</a>
+            </div>
+          </div>
+          <div class="card text-bg-dark">
+            <img src="img/pygameBreakout.png" class="card-img-top" alt="Pygame Breakout Gameplay Image">
+            <div class="card-body">
+              <h5 class="card-title">Pygame Breakout</h5>
+              <p class="card-text">
+                A clone of the classic arcade game Breakout written in Pygame. Destroy colored blocks by bouncing
+                a ball with your paddle into them.
+              </p>
+              <a href="https://github.com/GuilhermeJuventino/Breakout-Pygame"
+              class="btn btn-primary">Github Repository</a>
+            </div>
+          </div>
+          <div class="card text-bg-dark">
+            <img src="img/bevyAsteroids.png" class="card-img-top" alt="Bevy Asteroids Gameplay Image">
+            <div class="card-body">
+              <h5 class="card-title">Bevy Asteroids</h5>
+              <p class="card-text">
+                A clone of the classic arcade game Asteroids made using the Bevy Game Engine.
+                Do your best to blow up all the asteroids while controlling your ship with the game's fun physics.
+              </p>
+              <a href="https://github.com/GuilhermeJuventino/bevy_asteroids"
+              class="btn btn-primary">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Typewriting animation code from: https://www.w3schools.com/howto/howto_js_typewriter.asp
+          var i = 0;
+          var text = "My Personal Projects";
+          var speed = 50;
+
+          // Animating h1 tag's text
+          function animateText() {
+              if (i < text.length) {
+                  document.getElementById("title").innerHTML += text.charAt(i);
+                  i++;
+                  setTimeout(animateText, speed);
+              }
+          }
+
+          animateText();
+        </script>
+    </body>
+</html>

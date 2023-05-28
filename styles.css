@@ -1,0 +1,50 @@
+/*Collor pallete configuration*/
+body {
+    background-color: #121111;
+    color: #d3d3d3;
+}
+
+/* Basic text configuration */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+h1,
+h5 {
+    color: #90ee90;
+}
+
+h2 {
+    padding-top: 25px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, Serif;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2,
+pre,
+p {
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-container {
+    margin: 0 auto;
+    padding-top: 23px;
+    max-width: 900px;
+    min-height: 600px;
+}
