@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %} Guilherme Juventino {% endblock %}
+
+{% block body %}
+    <h2 class="text-center">About me:</h2>
+
+    <div class="text-container">
+        <p class="text-center">
+        I'm a Brazilian programmer who started his journey with Python,
+        after learning the basics of Python, I started exploring libraries
+        like Pygame and Flask and different programming languages
+        like Rust, Lua, and JavaScript.
+        </p>
+
+        <p class="text-center">
+        So feel free to take a good look at this website, and explore all it has to offer.
+        </p>
+    </div>
+
+
+
+    <script>
+        // Typewriting animation code from: https://www.w3schools.com/howto/howto_js_typewriter.asp
+        var i = 0;
+        var text = "Wellcome to Guilherme Juventino's Portfolio";
+        var speed = 50;
+
+        // Animating h1 tag's text
+        function animateText() {
+            if (i < text.length) {
+                document.getElementById("title").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(animateText, speed);
+            }
+        }
+
+        animateText()
+    </script>
+
+{% endblock %}
