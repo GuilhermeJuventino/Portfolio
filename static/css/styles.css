@@ -59,3 +59,17 @@ p {
     gap: 5px;
     justify-content: center;
 }
+
+.card-body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.text-end {
+    align-self: center;
+}
