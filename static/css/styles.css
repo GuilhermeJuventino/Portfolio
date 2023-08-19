@@ -54,13 +54,8 @@ p {
     min-height: 600px;
 }
 
-.contact-link:link,
-.contact-link { 
-    color: #90ee90;
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    color: #63bd63;
-    text-decoration: underline;
+.button-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
